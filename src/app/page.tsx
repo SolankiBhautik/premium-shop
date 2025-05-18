@@ -2,6 +2,7 @@ import { Suspense } from 'react';
 import Link from 'next/link';
 import { getProducts } from '@/lib/api';
 import ProductCard from '@/components/ProductCard';
+import Image from 'next/image';
 
 async function FeaturedProducts() {
   const products = await getProducts();
@@ -52,7 +53,7 @@ export default function Home() {
             </div>
           </div>
           <div className="bg-muted lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-            <img
+            <Image
               className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
               src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
               alt="Shopping experience"

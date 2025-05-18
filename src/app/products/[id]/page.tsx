@@ -4,13 +4,10 @@ import { getProduct } from '@/lib/api';
 import { StarIcon } from '@heroicons/react/24/solid';
 import AddToCartButton from './AddToCartButton';
 
-interface ProductPageProps {
-  params: {
-    id: string;
-  };
-}
 
-export default async function ProductPage({ params }: ProductPageProps) {
+// Disable ESLint for the next line
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default async function ProductPage({ params }: any) {
   const productId = parseInt(params.id);
   
   if (isNaN(productId)) {

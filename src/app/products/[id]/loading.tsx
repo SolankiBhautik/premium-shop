@@ -1,5 +1,3 @@
-import Navigation from '@/components/Navigation';
-
 export default function Loading() {
   return (
     <div className="min-h-screen bg-background">

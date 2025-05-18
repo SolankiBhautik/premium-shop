@@ -3,7 +3,6 @@
 import { Suspense } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import Navigation from '@/components/Navigation';
 import { useUserStore } from '@/store/user';
 import { signInSchema } from '@/lib/validations/auth';
 import { useForm } from 'react-hook-form';

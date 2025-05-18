@@ -1,7 +1,6 @@
 import { Suspense } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Navigation from '@/components/Navigation';
 import { getCategories } from '@/lib/api';
 import { Card, CardContent } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";

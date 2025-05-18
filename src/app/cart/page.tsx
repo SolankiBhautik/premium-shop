@@ -4,7 +4,6 @@ import { Suspense } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { TrashIcon } from '@heroicons/react/24/outline';
-import Navigation from '@/components/Navigation';
 import { useCartStore } from '@/store/cart';
 
 function CartItems() {

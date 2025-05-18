@@ -1,7 +1,6 @@
 'use client'
 
 import { Suspense } from 'react';
-import Navigation from '@/components/Navigation';
 import { useUserStore } from '@/store/user';
 import ProductCard from '@/components/ProductCard';
 

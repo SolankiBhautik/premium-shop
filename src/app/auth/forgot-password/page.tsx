@@ -2,7 +2,6 @@
 
 import { Suspense } from 'react';
 import Link from 'next/link';
-import Navigation from '@/components/Navigation';
 import { z } from 'zod';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
