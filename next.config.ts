@@ -1,7 +1,14 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  transpilePackages: ['undici'],
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.js$/,
+      include: /node_modules\/undici/,
+      type: 'javascript/auto',
+    });
+    return config;
+  },
 };
 
 export default nextConfig;
